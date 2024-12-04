@@ -33,3 +33,34 @@
   </footer>
 </body>
 </html>
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f9;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px auto;
+  width: 80%;
+  border: 2px solid #ccc;
+  padding: 10px;
+}
+
+.puzzle-piece {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+.hidden {
+  display: none; /* Hides the extra piece */
+}
+
+footer {
+  margin-top: 20px;
+}

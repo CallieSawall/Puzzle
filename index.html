@@ -1,64 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Puzzle Assignment</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  background-color: #f4f4f9;
-}
-
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin: 20px auto;
-  width: 80%;
-  border: 2px solid #ccc;
-  padding: 10px;
-}
-  .puzzle-piece {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border: 1px solid #ddd;
-}
-
-.hidden {
-  display: none; /* Hides the extra piece */
-}
-  <h1>Puzzle: Butterflies</h1>
-  <div class="flex-container">
-    <img src="C:\Users\csawall\AppData\Local\Temp\01c916a1-17a9-4e5d-880c-622598bedd64_4.4_puzzle1 (4).zip.4.4_puzzle1 (4).zip\puzzle1_A.jpg" alt="Piece 1" class="puzzle-piece">
-    <img src="images/piece2.jpg" alt="Piece 2" class="puzzle-piece">
-    <img src="images/piece3.jpg" alt="Piece 3" class="puzzle-piece">
-    <img src="images/piece4.jpg" alt="Piece 4" class="puzzle-piece">
-     <img src="images/piece5.jpg" alt="Piece 5" class="puzzle-piece">
-    <img src="images/piece6.jpg" alt="Piece 6" class="puzzle-piece">
-    <img src="images/piece7.jpg" alt="Piece 7" class="puzzle-piece">
-    <img src="images/piece8.jpg" alt="Piece 8" class="puzzle-piece">
-     <img src="images/piece9.jpg" alt="Piece 9" class="puzzle-piece">
-    <img src="images/piece10.jpg" alt="Piece 10" class="puzzle-piece">
-    <img src="images/piece11.jpg" alt="Piece 11" class="puzzle-piece">
-    <img src="images/piece12.jpg" alt="Piece 12" class="puzzle-piece">
-     <img src="images/piece13.jpg" alt="Piece 13" class="puzzle-piece">
-    <img src="images/piece14.jpg" alt="Piece 14" class="puzzle-piece">
-    <img src="images/piece15.jpg" alt="Piece 15" class="puzzle-piece">
-    <img src="images/piece16.jpg" alt="Piece 16" class="puzzle-piece">
-    <img src="images/extra_piece.jpg" alt="Extra Piece" class="puzzle-piece hidden">
-  </div>
-  <footer>
-    footer {
-  margin-top: 20px;
-}
-    <p>Completed by: [Your Name]</p>
-    <p>Date: [Date]</p>
-    footer {
-
-  </footer>
+<style>
+  section.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-row: repeat(3, 1fr);
+    background-color: purple;
+    padding: 10px;
+  }
+  section div.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    font-size: 1.2em;
+    text-align: center;
+  }
+</style>
+<section class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+</section>
